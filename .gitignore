@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# build folders
+dist/
+build/
+
+# environment files
+.env
+
+# OS / editor files
+.DS_Store
+.vscode/
+
+# archives & media
+*.zip
+*.rar
+*.mp4
+*.mov
+*.mkv
