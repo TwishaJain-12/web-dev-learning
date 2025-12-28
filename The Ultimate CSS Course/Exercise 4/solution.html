@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multi-Colored Website</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=WDXL+Lubrifont+JP+N&display=swap');
+
+    /* :root {
+        --primary-color: rgb(194, 10, 240);
+        --sec-color: rgb(197, 197, 244);
+        --text-color: white;
+    } */
+
+    :root {
+        --primary-color: rgb(110, 12, 12);
+        --sec-color: rgb(239, 163, 163);
+        --text-color: white;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: var(--sec-color);
+    }
+
+    nav {
+        background-color: var(--primary-color);
+        padding: 10px 0px;
+        font-family: "WDXL Lubrifont JP N", sans-serif;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 23px;
+        display: inline;
+        font-weight: bolder;
+    }
+
+    ul li a{
+        text-decoration: none;
+        color: var(--text-color);
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

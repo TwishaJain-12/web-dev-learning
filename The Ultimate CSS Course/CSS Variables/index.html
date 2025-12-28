@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            /* root me global variable banta hain */
+            --color: rgb(193, 40, 112);
+            --seccolor: rgb(241, 190, 218);
+            --defpad: 23px;
+            --defop: 0.2;
+
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav{
+            background-color: var(--color)
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 5px solid var(--seccolor);
+        }
+
+        ul li:first-child{
+            --color: rgb(230, 170, 59);
+            /* This is local variable */
+            background-color: var(--color, blue);
+        }
+
+        .container{
+            background-color: var(--seccolor)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, neque blanditiis. Nihil distinctio quod
+        consequuntur quisquam qui ea labore ducimus commodi dignissimos, veritatis fugiat adipisci asperiores nesciunt
+        ipsum voluptate quibusdam cum? Non, at molestias accusantium laborum, sequi ea, voluptas veritatis facere
+        consequuntur obcaecati tempora a.
+    </div>
+</body>
+
+</html>

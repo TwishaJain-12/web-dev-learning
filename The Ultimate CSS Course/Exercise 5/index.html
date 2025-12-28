@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+        }
+
+        nav {
+            background-color: rgb(244, 78, 222);
+            width: 100vw;
+            height: 5vh;
+            text-align: right;
+            padding-top: 5px;
+            /* position: fixed;
+            top: 0px; */
+        }
+
+        nav ul li {
+            display: inline;
+            list-style: none;
+            padding: 50px;
+            font-size: 18px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .boxes {
+            height: 410px;
+            margin: 44px 10px 5px 10px;
+            background-color: bisque;
+            text-align: center;
+        }
+
+        .box {
+            /* background-color: dimgrey; */
+            display: inline-block;
+            border: 5px solid black;
+            margin: 20px 130px 20px 130px;
+            width: 350px;
+            height: 360px;
+        }
+        .box:first-child{
+            background-color: pink;
+        }
+        .box:nth-child(2){
+            background-color: aqua;
+        }
+
+        .text {
+            margin: 30px 50px 10px 50px;
+            /* height: 200px; */
+            border: 5px solid black;
+            border-radius: 120px;
+            background-color: deeppink;
+            text-align: center;
+            font-size: 3em;
+            padding: 30px 0px;
+        }
+
+        .logo {
+            position: fixed;
+            bottom: 12px;
+            right: 5px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            /* background-color: bisque; */
+        }
+
+        .footer {
+            background-color: rgb(183, 210, 249);
+            height: 5vh;
+            padding-top: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="boxes">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <div class="text">
+            Welcome to Sigma Web Development Express
+        </div>
+
+        <div class="logo">
+            <img src="https://www.logoai.com/oss/icons/2021/12/02/SU8HhT2n6tL-p-_.png" alt="">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            Terms and Conditions applied
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncy Ball Animation</title>
+    <style>
+        .container{
+            position: relative;
+            background-color: blue;
+            height: 80vh;
+            width: 80vw;
+        }
+        .box{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: red;
+            border-radius: 80px;
+            height: 100px;
+            width: 100px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: bounce 5s linear 1s infinite alternate-reverse forwards;
+        }
+
+        @keyframes bounce {
+            0%{
+                transform: translate(0);
+            }
+            25%{
+                transform: translateX(128px) translateY(-256px);
+            }
+            50%{
+                transform: translateX(256px) translateY(0px);
+            }
+            75%{
+                transform: translateX(384px) translateY(-256px);
+            }
+            100%{
+                transform: translateX(512px) translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        .container{
+            position: relative;
+            background-color: blue;
+            height: 80vh;
+            width: 80vw;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 80px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: bouncyY 250ms linear forwards,
+                       bouncyY 250ms linear reverse forwards,
+                       bouncyX 5s linear forwards;
+        }
+
+        @keyframes bouncyX {
+            from{
+
+            }
+            to{
+                transform: translateX(256px);
+            }
+        }
+        @keyframes bouncyY {
+            from{
+
+            }
+            to{
+                transform: translateY(-256px);
+            }
+        }
+        /* @keyframes bouncy {
+            17%{
+                transform: translateX(40px) translateY(-60px);
+            }
+            34%{
+                transform: translateX(80px) translateY(-120px);
+            }
+            51%{
+                transform: translateX(128px) translateY(-180px);
+            }
+            70%{
+                transform: translateX(160px) translateY(-120px);
+            }
+            88%{
+                transform: translateX(210px) translateY(-60px);
+            }
+            100%{
+                transform: translateX(256px);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS units</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1280px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: cornflowerblue;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1280px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            /* auto left right ki marging ke liye, 23px top bottom ki */
+            background-color: cornflowerblue;
+            font-size: 12px;
+        }
+
+        .container>div {
+            font-size: 2em;
+            width: 50%;
+            border: 2px solid burlywood;
+        }
+
+        .container>div>div {
+            border: 2px solid limegreen;
+            width: 50%;
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: indigo;
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolor et repellendus voluptas aperiam officia
+            non culpa blanditiis vero beatae error incidunt assumenda fugit, nesciunt distinctio eius dicta aut
+            consequatur nulla provident modi officiis. Asperiores magnam obcaecati, reiciendis, blanditiis vero
+            cupiditate magni porro dicta officia consectetur ipsam aspernatur veritatis neque, praesentium quia beatae
+            suscipit.
+
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nihil quas, molestiae deserunt
+                repudiandae, similique deleniti neque consequatur vero, ducimus impedit illo facilis?
+            </div>
+
+        </div>
+    </div>
+    <div class="mycont">
+        This is my Content!
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+            float: left;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://as1.ftcdn.net/jpg/01/04/81/16/1000_F_104811674_wLy2HGF67jhdmXO6jzKwNl64UDtwngma.jpg" alt="" width="250px">
+        <div class="card">Card 1
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A unde provident inventore eos similique, quas quae, temporibus ipsum laborum, nisi est dolores repellendus. Corrupti, nemo maxime. Inventore quos ut nesciunt doloremque aliquam laudantium alias.</p>
+        </div>
+        <div class="card">Card 2
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reprehenderit quisquam consectetur. Nihil nobis tempore eveniet quos id in fugiat quis nesciunt dolor architecto, illo praesentium aspernatur similique nisi quam reiciendis, omnis quae aliquam sapiente fugit. Beatae corrupti, quidem sapiente mollitia laudantium molestiae minima quas eligendi fugit eum nesciunt vero molestias doloremque. Sint vitae quis dolorum voluptas asperiores excepturi iste ipsam officiis inventore ex qui beatae delectus eius, maiores exercitationem omnis eveniet totam alias, molestias cumque unde adipisci saepe accusamus sunt. Cupiditate consectetur explicabo alias iusto aspernatur eius, nam cumque sed, nulla ipsum laudantium hic numquam! At excepturi nisi ad numquam magni ducimus corporis nemo commodi fugiat, dignissimos facere, non neque minima. Voluptates rem, quia id numquam reprehenderit nesciunt. Tempora inventore provident deleniti optio voluptate ad sit nulla, dolorem voluptas nisi totam blanditiis aliquid perferendis vitae doloribus, non ipsa perspiciatis assumenda quam est debitis molestiae consequuntur! Quam nam ullam vel, illo necessitatibus repellat quasi error quod voluptate inventore modi, consequuntur nostrum. Magni eligendi ullam architecto possimus ex perspiciatis ducimus eius officiis vero quis, voluptatem enim consequuntur commodi provident, similique sint pariatur modi tempore nisi facere? Velit, repudiandae officiis consequuntur veritatis minus voluptatibus, tenetur, numquam similique odit esse inventore officia qui.</p>
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

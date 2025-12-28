@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box agar apne parent ka 1st child hain to, yeh kar do! */
+
+        /* .box::first-line{
+            color: green
+        } */
+
+        /* .boxes *{
+            border: 2px solid black;
+            color: blue;
+        }
+
+        [data-color="primary"]{
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(even){
+            background-color: darkmagenta;
+        } */
+
+        /* .box:nth-last-child(1){
+            background-color: hotpink;
+        } */
+
+        .boxes::before{
+            content: "Twisha is becoming a Web Developer!! ";
+            color: blue;
+        }
+        .boxes::after{
+            content: "Sigma Course is also good!";
+            color: red;
+        }
+
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        .box::first-letter{
+            color: darkorchid;
+            font-size: 30px;
+        }
+
+        input::placeholder{
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" data-color="primary">Hey I am the first box. I am a div box.</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your Name here">
+    </div>
+</body>
+</html>
