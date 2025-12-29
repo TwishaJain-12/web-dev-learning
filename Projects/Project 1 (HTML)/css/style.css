@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body with background image */
+body {
+    background: url('../img/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.9); /* Red theme */
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffe6e6;
+}
+
+/* Main section */
+main {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+main section:first-of-type img {
+    width: 300px;
+    animation: float 4s ease-in-out infinite;
+}
+
+main section:first-of-type p {
+    font-size: 1.6rem;
+    margin: 20px 0;
+}
+
+main input {
+    padding: 12px 25px;
+    width: 60%;
+    max-width: 500px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+/* Second Section: Food delivery info */
+main section:nth-of-type(2) {
+    margin-top: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+main section:nth-of-type(2) h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+main section:nth-of-type(2) p {
+    font-size: 1.1rem;
+    color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+main section:nth-of-type(2) ul {
+    list-style-type: disc;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    color: #fff;
+}
+
+main section:nth-of-type(2) ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.85);
+    text-align: center;
+    padding: 12px;
+    font-size: 0.95rem;
+}
+
+/* Floating logo animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    main input {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
