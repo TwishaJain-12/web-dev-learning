@@ -16,8 +16,8 @@ to check if it is <0.1 for 10% prob
 */
 
 console.log("CALCULATOR");
-let a = Number(prompt("Enter the first no.: "));
-let b = Number(prompt("Enter the second no.: "));
+let a = prompt("Enter the first no.: ");
+let b = prompt("Enter the second no.: ");
 let op = prompt("Enter the operation: ");
 // let a = 7
 // let b = 8
