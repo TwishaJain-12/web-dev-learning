@@ -47,3 +47,18 @@ console.log(a1.sort(function(a,b){return a-b})) //fix this by providing a compar
 // result -> 0, no changes made to the order
 
 //SPLICE
+//to delete particular items and insert at their place
+let numbers = [1,2,3,4,5]
+console.log(numbers.splice(1,2))
+console.log(numbers)
+console.log(numbers.splice(1,2,6,7))
+console.log(numbers)
+
+//SLICE
+numbers = [1,2,3,4,5]
+console.log(numbers.slice(2))
+console.log(numbers.slice(1,3)) //not including 3
+
+//REVERSE
+console.log(numbers.reverse())
+
