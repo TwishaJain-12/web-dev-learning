@@ -9,6 +9,11 @@ let n = prompt("Enter the number: ")
 //     arr.push(n)
 // }
 
+/*We can make array from:
+    let arr = Array.from(Array(n+1).keys()) starts from 0
+    arr.slice(1,)
+*/
+
 // let factorial = (a,b)=>{
 //     return a*b
 // }
