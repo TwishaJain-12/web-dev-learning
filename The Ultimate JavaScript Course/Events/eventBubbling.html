@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child{
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+
+        .childContainer{
+            background-color: beige;
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .container{
+            background-color: yellow;
+            margin: 14px;
+            padding: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let child = document.querySelector(".child")
+        child.addEventListener("click", (e)=>{
+            e.stopPropagation()
+            alert("The child has been clicked")
+        })
+        let childContainer = document.querySelector(".childContainer")
+        childContainer.addEventListener("click", (e)=>{
+            e.stopPropagation()
+            alert("The childContainer has been clicked")
+        })
+        let container = document.querySelector(".container")
+        container.addEventListener("click", (e)=>{
+            alert("The container has been clicked")
+        })
+
+
+        //if u want a thing to repeatedly happen after every 2 seconds=> setInterval()
+        // setInterval(() => { // a func that takes a func and interval
+            
+        // }, interval); //interval in time in ms
+
+        function getRandomColor(){
+            let val1 = Math.ceil(0+Math.random()*255);
+            let val2 = Math.ceil(0+Math.random()*255);
+            let val3 = Math.ceil(0+Math.random()*255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+
+        let a = setInterval(() => {
+            childContainer.style.backgroundColor = getRandomColor();
+        }, 1000);
+
+        console.log(a); //whatever no. this returns we can use it to clear the interval i.e., stop it
+
+        clearInterval(a)
+
+        let b = setTimeout(() => {
+            childContainer.style.backgroundColor = getRandomColor();
+        }, 5000); //sirf ek baar cheez hoti hain after the given time interval
+
+        console.log(b)
+
+        //if i want to stop this from happening run
+        
+        clearTimeout(b)
+
+    </script>
+</body>
+</html>
+
+<!--  e.stopPropagation() stops event bubbling i.e., stops -->
+
+<!-- Event Bubbling: when an event is listened, uska listener is activated along with its parent's listener -->
